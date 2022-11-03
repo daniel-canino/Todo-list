@@ -1,0 +1,36 @@
+{% extends 'todo/layout.html' %}
+{%block content %}
+
+<style type="text/css">
+  body {background-color: #ccc;}
+</style>
+
+<div class="container text-center " >
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Tarea</th>
+      <th scope="col">Accion</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+  	{% for tarea in tareas %}
+    <tr>
+      <td>{{tarea}} </td>
+      <td>
+      	<a class="btn btn-danger" href=" {% url 'eliminar' tarea.id %} ">Eliminar</a>
+      	<a class="btn btn-primary" href=" {% url 'editar' tarea.id %} ">Editar</a>
+      </td>
+    </tr>
+  	{% endfor %}
+  </tbody>
+</table>
+
+<table class="table">
+  <thead class="thead-light"> 
+  </tbody>
+</table>
+</div>
+
+{% endblock%}

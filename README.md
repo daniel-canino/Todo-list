@@ -3,7 +3,7 @@
 ## ¿Que hace?
 
 Las operaciones CRUD. Crear tareas, editarlas, eliminarlas y muestra las tareas.
-Fue desarrollado en Django, con HTML y Boostrap
+Fue desarrollado en Django, con HTML y Bootstrap
 
 
 ## Como usarla o configurla
